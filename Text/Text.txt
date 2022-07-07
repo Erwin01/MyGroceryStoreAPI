@@ -1,0 +1,105 @@
+﻿
+INSTALL PACKAGE / INSTALAR PAQUETE
+
+MongoDB.Driver
+
+
+USE CONSOLE MONGODB / USAR MONGODB EN CONSOLA
+
+- click double in C:\Program Files\MongoDB\Server\5.0\bin -> mongo.exe
+
+
+- In file launchSttings.json
+
+Change: "launchUrl": "/weatherForecastController"
+        
+        "launchUrl": "api/product",
+
+
+
+- Use Inventory - Enter
+
+- show collections - Enter
+
+- db.Products.find().pretty() - Enter
+{
+        "_id" : ObjectId("62c5f86dac44f2e9a787785c"),
+        "Name" : "White Re",
+        "Stock" : 25,
+        "Category" : "Drinks",
+        "ExpiryDate" : ISODate("2026-06-10T05:00:00Z")
+}
+
+
+
+
+
+
+METHODS HTTP 
+POSTMAN - Advanced REST Client 
+Navigators: Chrome - Firefox - Microsoft Edge...
+
+//=========================================================================
+    GET - GEAT ALL
+//=========================================================================
+
+URL: https://localhost:44341/api/product
+
+
+
+//=========================================================================
+    POST / CREATE
+//=========================================================================
+
+body - raw - json
+
+URL: https://localhost:44341/api/product
+{
+    "Name": "White White",
+    "Stock": 20,
+    "ExpiryDate": "2026-06-11",
+    "Category": "Drinks"
+}
+
+
+//=========================================================================
+    GET - GET BY ID
+//=========================================================================
+
+ID: 62c5f86dac44f2e9a787785c
+
+URL: https://localhost:44341/api/product/62c5f86dac44f2e9a787785c
+
+
+
+//=========================================================================
+    PUT / UPDATE
+//=========================================================================
+
+body - raw - json
+
+ID: 62c5f86dac44f2e9a787785c
+
+URL: https://localhost:44341/api/product/62c5f86dac44f2e9a787785c
+
+{
+    "Name": "White Vine",
+    "Stock": 25,
+    "ExpiryDate": "2028-07-12",
+    "Category": "Drinks"
+}
+
+
+
+
+//=========================================================================
+    DELETE - DELETE
+//=========================================================================
+
+ID: 62c5f86dac44f2e9a787785c
+
+https://localhost:44341/api/product/62c5f86dac44f2e9a787785c
+
+
+
+
