@@ -8,6 +8,7 @@ USE CONSOLE MONGODB / USAR MONGODB EN CONSOLA
 
 - click double in C:\Program Files\MongoDB\Server\5.0\bin -> mongo.exe
 
+-In Disk C, create folder with name data
 
 - In file launchSttings.json
 
